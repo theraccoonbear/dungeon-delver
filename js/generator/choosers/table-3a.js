@@ -3,43 +3,20 @@ Table3a = Chooser.extend({
 		var t = 'd20';
 		var o = {
 			'1-12': {
-				msg: ', 10\' wide',
+				msg: ', 10\' wide ',
 			},
-			'3-4': {
-				msg: 'turns right 90 degrees',
+			'13-16': {
+				msg: ', 20\' wide ',
 			},
-			'5': {
-				msg: 'turns left 45 degrees ahead'
+			'17': {
+				msg: ', 30\' wide '
 			},
-			'6': {
-				msg: 'turns right 45 degrees ahead'
+			'18': {
+				msg: ', 5\' wide '
 			},
-			'7': {
-				msg: 'turns left 45 degrees backward'
-			},
-			'8': {
-				msg: 'turns right 45 degrees backward'
-			},
-			'9': {
-				msg: 'curves to the left ahead'
-			},
-			'10': {
-				msg: 'curves to the right ahead'
-			},
-			'11-13': {
-				msg: 'forms a "T"'
-			},
-			'14-15': {
-				msg: 'forms a "Y"'
-			},
-			'16-19': {
-				msg: 'forms a 4-way intersection'
-			},
-			'20': {
-				msg: 'forms an "X"'
-			},
-			
-			
+			'19-20': {
+				msg: ['table-3b']
+			}
 		};
 		
 		Table3.super.constructor.call(this, 'Table3a', t, o);

@@ -1,3 +1,8 @@
+Object.prototype.isNumber = function() {
+	var n = this;
+  return !isNaN(parseFloat(n)) && isFinite(n);
+};
+
 var Init = Class.extend({
 	head: null,
 	toLoad: [],

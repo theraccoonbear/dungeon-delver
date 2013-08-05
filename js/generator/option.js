@@ -10,13 +10,20 @@ var Option = Class.extend({
 		} else if (typeof o.msg === 'object' && o.msg.length) {
 			this.msg = o.msg;
 		}
+		
+		this.val = typeof o.val === 'undefined' ? 0 : o.val;
+		//console.log(o.val + ' : ' + this.val);
 	},
 	
 	getMessage: function(type) {
 		var m = '[missing]';
 		type = typeof type === 'undefined' ? 'msg' : type;
 		
-		if (this[type].length > 0) {
+		if (type == 'val') {
+			return this.val;
+		}
+		
+		if (typeof this[type] !== 'undefined') { //this[type].length > 0) {
 			m = '';
 			for (var i = 0; i < this[type].length; i++) {
 				var mpt = this.msg[i];

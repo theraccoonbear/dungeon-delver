@@ -9,10 +9,10 @@ Table1 = Chooser.extend({
 				msg: ['The passage ends at a door ', 'table-2'],
 			},
 			'6-10': {
-				msg: ['You\'re in a passage which has a side passage that ', 'table-3'],
+				msg: ['A side passage', 'table-3a', 'table-3'],
 			},
 			'11-13': {
-				msg: ['You\'re in a ', 'table-4', 'table-3']
+				msg: ['The passage curves ', 'table-4']
 			},
 			'14-16': {
 				msg: ['You enter a chamber ', 'table-5a']

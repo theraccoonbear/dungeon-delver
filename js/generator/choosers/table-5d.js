@@ -30,11 +30,13 @@ Table5d = Chooser.extend({
 			},
 			'15-20': {
 				msg: [function() {
-					return ', really big';
+					var another = ctxt.getOption(die.roll('d20'), 'val') * 1;
+					//console.log('*' + another + '*'); return 0;
+					var sq_ft = 2700 + another;
 					//x = new Table5d();
-					//console.log(ctxt.getResult());
-					//return 'xxxxx';
 					//return ', about ' + (2000 + choosers.chooser['Table5d'].getResult('val')) + ' sq. ft.';
+					
+					return ', ' + sq_ft + ' sq. ft.';
 				}],
 				val: 999999
 			}

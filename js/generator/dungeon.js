@@ -6,9 +6,8 @@ var Dungeon = Class.extend({
 	
 	start: function() {
 		console.log('~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=');
-		var r = choosers.choosers['Table1'].getResult();
-		//var r = choosers.choosers['Table1'].getOption(15);
-		//var r = choosers.choosers['Table5a'].getOption(19);
+		//var r = choosers.choosers['Table5d'].getResult();
+		var r = choosers.choosers['Table5d'].getOption(16);
 		console.log(r);
 	}
 	
