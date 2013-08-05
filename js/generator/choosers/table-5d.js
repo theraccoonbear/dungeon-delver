@@ -32,13 +32,15 @@ Table5d = Chooser.extend({
 				msg: [function() {
 					var another = ctxt.getOption(die.roll('d20'), 'val') * 1;
 					//console.log('*' + another + '*'); return 0;
-					var sq_ft = 2700 + another;
+					//var sq_ft = 2700 + another;
+					
+					var sq_ft = [2700, another].join(' + ');
 					//x = new Table5d();
 					//return ', about ' + (2000 + choosers.chooser['Table5d'].getResult('val')) + ' sq. ft.';
 					
 					return ', ' + sq_ft + ' sq. ft.';
 				}],
-				val: 999999
+				val: 1
 			}
 		};
 		
